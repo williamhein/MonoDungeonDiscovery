@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/File.spritefont</SourceFile>
+  <SourceTime>2025-01-06T20:57:27.3180393-06:00</SourceTime>
+  <DestFile>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/bin/DesktopGL/Hope.xnb</DestFile>
+  <DestTime>2025-01-08T19:30:16.6924045-06:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2024-08-16T12:05:56-05:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2024-08-16T12:05:56-05:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
