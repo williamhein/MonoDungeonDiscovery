@@ -27,16 +27,15 @@ namespace MonoDungeonDiscovery
         {
             _graphics.HardwareModeSwitch = false;
 
-            Renderer.Resize(Window.ClientBounds.Width, Window.ClientBounds.Height, true);
-
             Input.Initialize();
-            
-            base.Initialize();
+
+            Renderer.Resize(Window.ClientBounds.Width, Window.ClientBounds.Height, true);
 
             Renderer.Initialize(this);
 
-            Graphics.Initialize(this);
+            World.Initialize(this);
 
+            base.Initialize();
         }
 
         protected override void LoadContent()
@@ -50,20 +49,14 @@ namespace MonoDungeonDiscovery
         {
             fps = (int)Math.Floor(1f/gameTime.ElapsedGameTime.TotalSeconds);
 
-
             Input.UpdateInputs();
-            MetaOptions.Update(this);
-            Renderer.Update(this);
-            Graphics.Update(this);
-            //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-            //    Exit();
-            //if (Input.GetInput(Keys.F12)) 
-            //    if (Renderer.isFullscreen)
-            //        Renderer.Resize(1280, 720, false);
-            //    else
-            //        Renderer.Resize(Window.ClientBounds.Width, Window.ClientBounds.Height, true);
 
-            // TODO: Add your update logic here
+            MetaOptions.Update(this);
+
+            Renderer.Update(this);
+
+            World.Update(this);
+
             if (Input.MouseButtonReleased(MouseButtons.Left)) score++;
 
             base.Update(gameTime);
@@ -71,7 +64,7 @@ namespace MonoDungeonDiscovery
 
         protected override void Draw(GameTime gameTime)
         {
-            Graphics.Draw(this);
+            World.Draw(this);
 
             base.Draw(gameTime);
         }

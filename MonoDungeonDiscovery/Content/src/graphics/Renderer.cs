@@ -10,11 +10,12 @@ namespace MonoDungeonDiscovery
     public class Renderer
     {
 
-        public static int screenWidth = 1280;
-        public static int screenHeight = 720;
-
         public static float unitsWide = 12;
         public static float unitsTall = 0;
+
+        public static float cameraX = 0;
+        public static float cameraY = 0;
+        public static float cameraZoom = 1;
 
         public static BlendState _blendColor;
         public static BlendState _blendAlpha;
@@ -23,7 +24,8 @@ namespace MonoDungeonDiscovery
 
         public static void Initialize(MonoDungeonDiscovery parent)
         {
-            
+            SpriteResource.Initialize(parent);
+            Graphics.Initialize(parent);
         }
         public static void Update(MonoDungeonDiscovery parent)
         {
@@ -36,6 +38,8 @@ namespace MonoDungeonDiscovery
             MonoDungeonDiscovery._graphics.PreferredBackBufferWidth = x;
             MonoDungeonDiscovery._graphics.PreferredBackBufferHeight = y;
             MonoDungeonDiscovery._graphics.ApplyChanges();
+
+            Renderer.unitsTall = Renderer.GetWindowHeight() / (Renderer.GetWindowWidth() / Renderer.unitsWide);
         }
 
         public static int GetWindowWidth()
