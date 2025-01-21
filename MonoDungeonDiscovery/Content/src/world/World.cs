@@ -13,8 +13,9 @@ namespace MonoDungeonDiscovery
             gameObjects = new List<GameObject>();
 
             gameObjects.Add(new MapObject(SpriteResource.SpriteResources["deathhouse"].texture));
-            gameObjects.Add(new MapObject(SpriteResource.SpriteResources["deathhouse"].texture));
-            gameObjects[1].Bounds = new System.Drawing.RectangleF(-5.5f, -1f, 1f, 1f);
+            gameObjects.Add(new FogForegroundObject(SpriteResource.SpriteResources["cloudtexture"].texture));
+            //gameObjects.Add(new MapObject(SpriteResource.SpriteResources["deathhouse"].texture));
+            //gameObjects[1].Bounds = new System.Drawing.RectangleF(-5.5f, -1f, 1f, 1f);
         }
         public static void Update(MonoDungeonDiscovery parent)
         {

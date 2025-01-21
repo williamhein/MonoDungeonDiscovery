@@ -16,6 +16,7 @@ namespace MonoDungeonDiscovery
         public static float cameraX = 0;
         public static float cameraY = 0;
         public static float cameraZoom = 1;
+        public static float cameraRotation = 0;
 
         public static BlendState _blendColor;
         public static BlendState _blendAlpha;

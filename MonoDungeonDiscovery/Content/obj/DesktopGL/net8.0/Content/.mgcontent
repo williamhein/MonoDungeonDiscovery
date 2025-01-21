@@ -4,9 +4,17 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/135-deathhouseplayer.png</File>
+    <File>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/cloudtexture.png</File>
     <File>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/File.spritefont</File>
+    <File>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/FogMask.fx</File>
+    <File>C:/Users/will/source/repos/MonoDungeonDiscovery/MonoDungeonDiscovery/Content/noiseTexture.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File>Hope.spritefont</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

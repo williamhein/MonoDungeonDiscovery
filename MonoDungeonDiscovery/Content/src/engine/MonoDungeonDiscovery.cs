@@ -15,6 +15,9 @@ namespace MonoDungeonDiscovery
         public static int score = 0;
 
         public static double fps;
+        public static double time;
+
+        public static readonly Random random = new Random();
         GameWindow otherWindow;
         public MonoDungeonDiscovery()
         {
@@ -48,6 +51,8 @@ namespace MonoDungeonDiscovery
         protected override void Update(GameTime gameTime)
         {
             fps = (int)Math.Floor(1f/gameTime.ElapsedGameTime.TotalSeconds);
+
+            time = gameTime.TotalGameTime.TotalMilliseconds;
 
             Input.UpdateInputs();
 

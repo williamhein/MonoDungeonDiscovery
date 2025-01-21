@@ -22,7 +22,11 @@ namespace MonoDungeonDiscovery
         {
             SpriteResources = new Dictionary<string, SpriteResource>();
 
-            SpriteResources["deathhouse"] = new SpriteResource(Renderer.LoadTextureStream(parent.GraphicsDevice, "135-deathhouseplayer"));
+            SpriteResources["deathhouse"] = new SpriteResource(parent.Content.Load<Texture2D>("135-deathhouseplayer"));
+            SpriteResources["noisetexture"] = new SpriteResource(parent.Content.Load<Texture2D>("noiseTexture"));
+            SpriteResources["cloudtexture"] = new SpriteResource(parent.Content.Load<Texture2D>("cloudtexture"));
+
+            //SpriteResources["deathhouse"] = new SpriteResource(Renderer.LoadTextureStream(parent.GraphicsDevice, "135-deathhouseplayer"));
         }
         public SpriteFont font;
         public Texture2D texture;
